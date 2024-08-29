@@ -51,6 +51,8 @@ p {
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
+
+    height: 100vh;
 }
 
 .button {
@@ -71,3 +73,28 @@ p {
     background-color: var(--primary-hover); /* Cambia el color según tu diseño */
 }
 
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials__description {
+    width: 80%;
+
+    margin: 25px 0px;
+}
+
+.testimonials__title,
+.testimonials__text {
+    text-align: center;
+}
+
+.testimonials__title {
+    color: var(--primary);
+}
+
+.testimonials__title > span {
+    color: var(--secondary);
+}
