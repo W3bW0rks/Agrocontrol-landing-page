@@ -78,3 +78,7 @@ p {
 .features__title {
     color: var(--primary);
 }
+
+.features__title--secondary-color {
+    color: var(--secondary);
+}
