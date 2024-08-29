@@ -53,8 +53,6 @@ p {
     max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
-
-    height: 100vh;
 }
 
 .button {
@@ -125,4 +123,63 @@ p {
     align-items: center;
 
     padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .features__description {
+        max-width: 80%;
+        margin: 16px 0px;
+    }
+
+    .features__cards {
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-template-areas: 
+        "card2 card4 card6"
+        "card1 card3 card5";
+    
+        gap: 16px;
+    }
+
+    .features__card:nth-child(1) {
+        grid-area: card1;
+    }
+    
+    .features__card:nth-child(2) {
+        grid-area: card2;
+    }
+    
+    .features__card:nth-child(3) {
+        grid-area: card3;
+    }
+    
+    .features__card:nth-child(4) {
+        grid-area: card4;
+    }
+    
+    .features__card:nth-child(5) {
+        grid-area: card5;
+    }
+    
+    .features__card:nth-child(6) {
+        grid-area: card6;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .features__description {
+        max-width: 60%;
+        margin: 16px 0px;
+    }
+
+    .features__cards {
+        gap: 25px;
+    }
+
+    .features__card {
+        width: 250px;
+        height: 250px;
+    }
 }
