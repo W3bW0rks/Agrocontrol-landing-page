@@ -83,18 +83,22 @@ p {
 }
 
 .features__description {
-    max-width: 90%;
+    max-width: 75%;
     margin: 16px 0px;
 }
 
-.features__description-title {
+.features__title {
     color: var(--primary);
 }
 
-.features__title--secondary-color {
+.features__title > span {
     color: var(--secondary);
 }
 
+.features__text {
+    font-size: .9rem;
+    color: var(--secondary);
+}
 
 .features__cards {
     display: grid;
