@@ -80,21 +80,16 @@ p {
     flex-direction: column;
 }
 
-.testimonials__description {
+.testimonials__header {
     width: 80%;
-
     margin: 25px 0px;
-}
-
-.testimonials__title,
-.testimonials__text {
     text-align: center;
 }
 
-.testimonials__title {
+.testimonials__header-title {
     color: var(--primary);
 }
 
-.testimonials__title > span {
+.testimonials__header-title > span {
     color: var(--secondary);
 }
