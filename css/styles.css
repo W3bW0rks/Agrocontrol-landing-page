@@ -47,10 +47,8 @@ p {
 }
 
 .container {
-    width: 90%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 1rem;
+        width: min(90%, 120rem);
+        margin: 0 auto;
 }
 
 .button {
@@ -69,5 +67,42 @@ p {
 
 .button:hover {
     background-color: var(--primary-hover); /* Cambia el color según tu diseño */
+}
+
+.producers-features {
+    font-family: var(--font-primary), serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.producers-features__title {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.producers-features__span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.producers-features__item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los íconos y textos */
+    gap: 1.5rem; /* Aumenta el gap para mejor separación */
+    padding: 0.5rem 1rem; /* Agrega padding para espaciado interno */
+    margin-bottom: 1rem; /* Agrega margen inferior para separar los elementos de la lista */
+}
+
+.producers-features__text-title {
+    font-size: 1.75rem;
+    color: var(--secondary);
+}
+
+.producers-features__sentence {
+    color: var(--fontcolor);
+}
+
+.producers-features__aside-img {
+    height: 100vh;
 }
 
