@@ -47,12 +47,9 @@ p {
 }
 
 .container {
-    width: 90%;
-    max-width: 75rem;
+    width: min(90%, 120rem);
     margin: 0 auto;
-    padding: 0 1rem;
 
-    height: 100vh;
 }
 
 .button {
@@ -89,7 +86,6 @@ p {
 
 .testimonials__header-title {
     color: var(--primary);
-    white-space: nowrap;
 }
 
 .testimonials__header-title > span {
@@ -133,4 +129,10 @@ p {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials__header-title {
+        white-space: nowrap;
+    }
 }
