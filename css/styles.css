@@ -93,3 +93,37 @@ p {
 .testimonials__header-title > span {
     color: var(--secondary);
 }
+
+.testimonials__cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.testimonials__card {
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.testimonials__card-header {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.testimonials__card-header h4 {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.testimonials__card-header p {
+    text-align: justify;
+}
+
+.testimonials__card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
