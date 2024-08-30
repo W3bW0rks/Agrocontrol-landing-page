@@ -47,7 +47,7 @@ p {
 }
 
 .container {
-        width: min(90%, 120rem);
+        width: min(90%, 75rem);
         margin: 0 auto;
 }
 
@@ -72,7 +72,8 @@ p {
 .producers-features {
     font-family: var(--font-primary), serif;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
 }
 
 .producers-features__title {
