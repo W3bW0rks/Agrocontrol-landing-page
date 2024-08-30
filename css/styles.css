@@ -9,6 +9,10 @@
     --fontcolor: #525252;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -70,50 +74,59 @@ p {
     background-color: var(--primary-hover); /* Cambia el color según tu diseño */
 }
 
-.producers-features {
+.users-features {
     font-family: var(--font-primary), serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
     padding: 1rem;
+    max-height: 720px;
+    margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-    .producers-features {
-        padding: 2rem;
-    }
-}
-
-.producers-features__content {
+.users-features__content {
     flex-direction: column;
 }
 
-.producers-features__title {
+.users-features__title {
     color: var(--secondary);
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-.producers-features__span {
+.users-features__span {
     color: var(--primary);
     font-weight: 600;
 }
 
-.producers-features__item {
+.users-features__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .users-features__list {
+        gap: 3rem;
+    }
+}
+
+.users-features__item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    flex: 1;
 }
 
 @media (min-width: 768px) {
-    .producers-features__item {
+    .users-features__item {
         gap: 1rem;
     }
 }
 
-.producers-features__icon img {
+.users-features__icon img {
     max-width: none;
     width: 40px;
     height: 40px;
@@ -122,34 +135,43 @@ p {
     display: block;
 }
 
-.producers-features__text-title{
+.users-features__text-title{
     font-size: 1.75rem;
     color: var(--secondary);
 }
 
 @media (min-width: 768px) {
-    .producers-features__text-title {
+    .users-features__text-title {
         margin-bottom: 0.5rem;
     }
 }
 
-.producers-features__text-sentence {
+.users-features__text-sentence {
     color: var(--fontcolor);
 }
 
-.producers-features__aside {
+.users-features__aside {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .producers-features__aside {
+    .users-features__aside {
         display: block;
+        height: auto;
+    }
+    .users-features__aside-img {
+        max-width: none;
+        width: 100%;
+        height: 700px;
     }
 }
 
-.producers-features__aside-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover
+@media (min-width: 1024px) {
+    .users-features__aside-img {
+        object-fit: contain; /* Ajusta la imagen para cubrir el contenedor sin distorsionar la imagen */
+        border-radius: 0.5rem;
+    }
 }
+
+
 
