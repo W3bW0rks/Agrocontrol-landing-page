@@ -44,11 +44,12 @@ h3 {
 
 p {
     font-size: 1rem;
+    text-align: justify;
 }
 
 .container {
-        width: min(90%, 75rem);
-        margin: 0 auto;
+    width: min(90%, 75rem);
+    margin: 0 auto;
 }
 
 .button {
@@ -71,14 +72,27 @@ p {
 
 .producers-features {
     font-family: var(--font-primary), serif;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .producers-features {
+        padding: 2rem;
+    }
+}
+
+.producers-features__content {
+    flex-direction: column;
 }
 
 .producers-features__title {
     color: var(--secondary);
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .producers-features__span {
@@ -88,22 +102,54 @@ p {
 
 .producers-features__item {
     display: flex;
-    align-items: center; /* Alinea verticalmente los íconos y textos */
-    gap: 1.5rem; /* Aumenta el gap para mejor separación */
-    padding: 0.5rem 1rem; /* Agrega padding para espaciado interno */
-    margin-bottom: 1rem; /* Agrega margen inferior para separar los elementos de la lista */
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.producers-features__text-title {
+@media (min-width: 768px) {
+    .producers-features__item {
+        gap: 1rem;
+    }
+}
+
+.producers-features__icon img {
+    max-width: none;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+.producers-features__text-title{
     font-size: 1.75rem;
     color: var(--secondary);
 }
 
-.producers-features__sentence {
+@media (min-width: 768px) {
+    .producers-features__text-title {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.producers-features__text-sentence {
     color: var(--fontcolor);
 }
 
+.producers-features__aside {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .producers-features__aside {
+        display: block;
+    }
+}
+
 .producers-features__aside-img {
-    height: 100vh;
+    width: 100%;
+    height: auto;
+    object-fit: cover
 }
 
