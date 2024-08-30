@@ -83,7 +83,8 @@ p {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
-    min-height: 100vh;
+    margin-bottom: 2rem;
+    max-height: 720px;
 }
 
 .users-features__content {
