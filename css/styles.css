@@ -87,10 +87,12 @@ nav {
     background-color: #043A3A;
     flex-direction: row;
     align-items: center;
-    position: sticky;
+    position: fixed;
     height: 4.375rem;
+    width: 100%;
     justify-content: space-around;
     font-family: var(--font-primary), serif;
+    z-index: 1000;
 }
 
 nav img {
