@@ -116,6 +116,15 @@ p {
     overflow: hidden;
 }
 
+.features__card h3 {
+    font-size: 22px;
+}
+
+.features__card p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
 .card--text {
     color: #fff;
     background-color: var(--primary);
