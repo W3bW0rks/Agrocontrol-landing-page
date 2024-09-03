@@ -1,0 +1,164 @@
+:root {
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Mulish', sans-serif;
+
+    --white: #FFFFFF;
+    --primary: #2FB95D;
+    --primary-hover: #259a4b;
+    --secondary:#043A3A;
+    --fontcolor: #525252;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #043A3A;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary); /* Cambia el color según tu diseño */
+    border: none;
+    border-radius: 0.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--primary-hover); /* Cambia el color según tu diseño */
+}
+
+
+/*Contact Page*/
+
+#contact {
+    font-family: "Raleway";
+}
+
+/*Left Section*/
+#txt-span {
+    color: #259a4b;
+}
+
+#left-section {
+    float: left;
+    width: 50%;
+    padding: 100px;
+}
+
+/*Right Section*/
+
+#right-section {
+    float: left;
+    width: 50%;
+    padding: 100px;
+}
+
+#full-name {
+    font-family: "Raleway";
+    border: none;
+    float: left;
+    width: 50%;
+    height: 32px;
+    border-bottom: 2px solid #525252;
+}
+
+#email {
+    border: none;
+    font-family: "Raleway";
+    float: left;
+    width: 50%;
+    height: 32px;
+    border-bottom: 2px solid #525252;
+}
+
+#telephone {
+    border: none;
+    font-family: "Raleway";
+    float: left;
+    width: 50%;
+    height: 32px;
+    border-bottom: 2px solid #525252;
+}
+
+#service {
+    border: none;
+    font-family: "Raleway";
+    float: left;
+    width: 50%;
+    height: 32px;
+    border-bottom: 2px solid #525252;
+}
+
+#message {
+    font-family: "Raleway";
+    border: none;
+    border-bottom: 2px solid #525252;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+#form-contc {
+    padding: 50px;
+    border-radius: 20px; 
+    box-shadow: -15px 5px 30px -5px #8c8a8a;
+}
+
+/*Button Submit*/
+
+#btt-contact {
+    margin-top: 30px;
+    width: 100%;
+    height: 72px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-size: medium;
+    border: none;
+    background-color: #2FB95D;
+    border-radius: 50px;
+}
