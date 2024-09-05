@@ -1,69 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AgroControl Landing Page" />
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <!--Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgroControl Landing Page">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>AgroControl</title>
-  </head>
-  <body>
-    <section id="contact">
-      <div id="left-section">
-        <h1>
-          Fill out the form <span id="txt-span">for a free consultation</span>
-        </h1>
-
-        <p>
-          Leave your details and we will contact you to offer you personalized
-          advice. Discover how our solutions can help you improve your field
-          management
-        </p>
-      </div>
-      <div id="right-section">
-        <div id="form-contc">
-          <form action="#">
-            <input
-              type="text"
-              id="full-name"
-              name="full-name"
-              placeholder="Full Name"
-            />
-
-            <input type="text" id="email" name="email" placeholder="Email" />
-
-            <input
-              type="text"
-              id="telephone"
-              name="telephone"
-              placeholder="Telephone"
-            />
-
-            <input
-              type="text"
-              name="service"
-              id="service"
-              placeholder="Service"
-            />
-
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Message"
-            ></textarea>
-            <button type="submit" id="btt-contact">Get Started</button>
-          </form>
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="assets\logo-agro-control.png" ></a>
+        <div class="button-wrapper">
+            <button id="menu-toggle"><img id="img-menu"src="assets\interface.png"></button>
         </div>
-      </div>
-    </section>
-  </body>
+        <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About Us</a></li>
+            <li><a href="#" id="our-service">Our Service</a></li>
+            <li><a href="#" id="blog">Blog</a></li>
+        </ul>
+        <ul id="nav-links">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="about">About Us</a></li>
+            <li><a href="#" id="our-service">Our Service</a></li>
+            <li><a href="#" id="blog">Blog</a></li>
+        </ul>
+        <div class="buttons">
+            <button id="prueba-gratis">Prueba Gratis</button>
+            <button id="demostracion">Demostración</button>
+        </div>
+    </nav>
+    <script src="./js/script.js"></script>
+</body>
 </html>
