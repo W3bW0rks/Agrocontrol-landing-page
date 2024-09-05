@@ -780,6 +780,10 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+.testimonials__header-text {
+    text-align: center;
+}
+
 .testimonials__card-header h4 {
     font-size: 20px;
     margin-left: 15px;
