@@ -160,4 +160,143 @@ p {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+
+
+#menu-toggle {
+    display: none;
+    background-color: transparent; 
+    border: none;
+}
+
+nav {
+    display: flex;
+    background-color: #043A3A;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    height: 4.375rem;
+    justify-content: space-around;
+    font-family: var(--font-primary), serif;
+}
+
+nav img {
+    width: 16.25rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 0 1.25rem;
+}
+
+nav ul li a {
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2FB95D;
+}
+
+.buttons {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 6.25rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttons #prueba-gratis {
+    background-color: #2FB95D;
+    color: white;
+}
+
+#nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #043A3A;
+    position: absolute;
+    top: 4.375rem;
+    left: 0;
+    width: 100%;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#nav-links.visible {
+    display: flex;
+    max-height: 20rem;
+}
+
+#nav-links li {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#nav-links li:hover{
+    background-color: #b4b4b4;
+    transition: ease-in 0.3s;
+} 
+
+#nav-links li a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+    nav img {
+        width: 10rem;
+    }
+    nav ul {
+        width: 40%;
+    }
+    .buttons button {
+        width: 7rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+    .button-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        width: 35%;
+    }
+    #menu-toggle {
+        display: block;
+    }
+    #menu-toggle #img-menu {
+        width: 30px;
+        border-radius: 30px;
+        padding: 3px;
+    }
+    #menu-toggle #img-menu:hover {
+        background-color: #f0f0f0;
+    }
+    .buttons {
+        width:40%;
+        gap: 0.5rem;
+    }
+    .buttons button{
+        width: 5rem;
+        height: 1.7rem;
+        font-size: 0.5rem;
+    }
 }
