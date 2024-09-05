@@ -6,46 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AgroControl Landing Page">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/section-plans.css">
     <title>AgroControl</title>
 </head>
 <body>
-    <nav>
-        <a href="#"><img src="assets\logo-agro-control.png" ></a>
-        <div class="button-wrapper">
-            <button id="menu-toggle"><img id="img-menu"src="assets\interface.png"></button>
+    <header>
+        <nav>
+            <a href="#hero"><img src="assets/logo-agro-control.png" ></a>
+            <div class="button-wrapper">
+                <button id="menu-toggle"><img id="img-menu"src="assets/interface.png"></button>
+            </div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#user-features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul id="nav-links">
+                <li><a href="#hero" id="home">Home</a></li>
+                <li><a href="#user-features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="buttons">
+                <button id="prueba-gratis">Enter webapp</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="hero">
+        <img id="img-desktop" class="hero-image" src="assets/hero-image.png" alt="AgroControl">
+        <div class="hero-text">
+            <h1>Manage Your Entire Agricultural Cycle Efficiently</h1>
+            <p>From sowing to distribution, our app helps you manage every stage of the agricultural process simply and effectively.</p>
+            <div class="buttons-hero">
+                <button class="button button-primary" id="get-started">Enter Webapp</button>
+                <button class="button button-secondary" id="learn-more">Learn More</button>
+            </div>
         </div>
-        <ul>
-            <li><a href="#" id="home">Home</a></li>
-            <li><a href="#" id="about">About Us</a></li>
-            <li><a href="#" id="our-service">Our Service</a></li>
-            <li><a href="#" id="blog">Blog</a></li>
-        </ul>
-        <ul id="nav-links">
-            <li><a href="#" id="home">Home</a></li>
-            <li><a href="#" id="about">About Us</a></li>
-            <li><a href="#" id="our-service">Our Service</a></li>
-            <li><a href="#" id="blog">Blog</a></li>
-        </ul>
-        <div class="buttons">
-            <button id="prueba-gratis">Prueba Gratis</button>
-            <button id="demostracion">Demostración</button>
-        </div>
-    </nav>
-  
-    <section class="hero-section ">
-    <img id="img-desktop" class="hero-image" src="assets/hero-image.png" alt="AgroControl">
-    <div class="hero-text">
-        <h1>Manage Your Entire Agricultural Cycle Efficiently</h1>
-        <p>From sowing to distribution, our app helps you manage every stage of the agricultural process simply and effectively.</p>
-        <div class="buttons-hero">
-            <button class="button button-primary" id="get-started">Get Started</button>
-            <button class="button button-secondary" id="learn-more">Learn More</button>
-        </div>
-    </div>
     </section>
+
     <div class="container">
-        <section class="users-features">
+        <section class="users-features" id="user-features">
             <div class="users-features__content">
                 <h2 class="users-features__title">Features for Agricultural<span class="users-features__span"> Producers</span></h2>
                 <ul class="users-features__list">
@@ -100,6 +105,7 @@
                 <img src="/assets/producer-features_img.png" class="users-features__aside-img" alt="App Features Image">
             </div>
         </section>
+
         <section class="users-features">
             <div class="users-features__aside">
                 <img src="/assets/distributor-features_img.png" class="users-features__aside-img" alt="App Features Image">
@@ -146,69 +152,62 @@
                 </ul>
             </div>
         </section>
-    </div>
-  
-    <div class="container">
-            <section class="features">
-                <div class="features__description">
-                    <h2 class="features__title">
-                        <span>Find out </span> how it works
-                    </h2>
-    
-                    <p class="features__text">
-                        Explore new features with a guided demo or download our app and start managing your agricultural production today.
-                    </p>
+
+        <section class="features" id="benefits">
+
+            <div class="features__description">
+                <h2 class="features__title">
+                    <span>Find out </span> how it works
+                </h2>
+
+                <p class="features__text">
+                    Explore new features with a guided demo or download our app and start managing your agricultural production today.
+                </p>
+            </div>
+
+            <div class="features__cards">
+                <!--card1-->
+                <div class="features__card card--text">
+                    <h3>Harvest Control</h3>
+                    <p> Manage and optimize your harvest with detailed tracking for each crop. Monitor
+                        growth stages, predict the best harvest dates, and ensure hight-quality production.</p>
                 </div>
 
-                <div class="features__cards">
-                    <!--card1-->
-                    <div class="features__card card--text">
-                        <h3>Harvest Control</h3>
-                        <p>
-                            Manage and optimize your harvest with detailed tracking for each crop. Monitor 
-                            growth stages, predict the best harvest dates, and ensure hight-quality production.
-                        </p>
-                    </div>
-                    
-                    <!--card2-->
-                    <div class="features__card">
-                        <img src="assets/card-one.png" alt="person mowing grass">
-                    </div>
-                    
-                    <!--card3-->
-                    <div class="features__card card--text">
-                        <h3>Irrigation Monitoring</h3>
-                        <p>
-                            Recive automatic alers when moisture levels fall outside optimal range,
-                            allowing you to adjust irrigation and maximize crop yield.
-                        </p>
-                    </div>
+                <!--card2-->
+                <div class="features__card">
+                    <img src="assets/card-one.png" alt="person mowing grass">
+                </div>
 
-                    <!--card4-->
-                    <div class="features__card">
-                        <img src="assets/card-two.png" alt="lawn care">
-                    </div>
+                <!--card3-->
+                <div class="features__card card--text">
+                    <h3>Irrigation Monitoring</h3>
+                    <p>Recive automatic alers when moisture levels fall outside optimal range,
+                        allowing you to adjust irrigation and maximize crop yield.</p>
+                </div>
 
-                    <!--card5-->
-                    <div class="features__card card--text">
-                        <h3>Online Seed and Equipment Purchases</h3>
-                        <p>
-                            Access a wide range of seeds and farming tools directly through the app. Compare
-                            prices, read reviews and purchase the best products to enhance your agricultural
-                            processes.
-                        </p>
-                    </div>
+                <!--card4-->
+                <div class="features__card">
+                    <img src="assets/card-two.png" alt="lawn care">
+                </div>
 
-                    <!--card6-->
-                    <div class="features__card">
-                        <img src="assets/card-three.png" alt="irrigation systems">
-                    </div>
-                </div>   
-                
-            </section>
+                <!--card5-->
+                <div class="features__card card--text">
+                    <h3>Online Seed and Equipment Purchases</h3>
+                    <p>  Access a wide range of seeds and farming tools directly through the app. Compare
+                        prices, read reviews and purchase the best products to enhance your agricultural
+                        processes.</p>
+                </div>
+
+                <!--card6-->
+                <div class="features__card">
+                    <img src="assets/card-three.png" alt="irrigation systems">
+                </div>
+            </div>
+
+        </section>
     </div>
-    <!-- section-plan-Agricultural-Producer -->
-    <section class="main-container">
+
+    <section class="main-container" id="plans">
         <div class="pricing-container">
             <h1 class="title">Plans and Pricing</h1>
             <h2 class="subtitle">Agricultural Producers</h2>
@@ -303,159 +302,164 @@
             </div>
         </div>
     </section>
-    <section class="container testimonials">
 
-                <div class="testimonials__header">
-                    <h2 class="testimonials__header-title">
-                        <span>Escucha que dicen nuestros</span> Clientes
-                    </h2>
-                    <p class="testimonials__header-text">
-                        Descubre cómo hemos ayudado a nuestros clientes a alcanzar sus metas 
-                        agrícolas con nuestras soluciones.
+    <section class="container testimonials" id="testimonials">
+
+        <div class="testimonials__header">
+            <h2 class="testimonials__header-title">
+                <span>Escucha que dicen nuestros</span> Clientes
+            </h2>
+            <p class="testimonials__header-text">
+                Descubre cómo hemos ayudado a nuestros clientes a alcanzar sus metas
+                agrícolas con nuestras soluciones.
+            </p>
+        </div>
+
+        <div class="testimonials__cards">
+
+            <div class="testimonials__card">
+                <div class="testimonials__card-header">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h4>Luisa Gutiérrez</h4>
+                </div>
+                <div class="testimonials__card-body">
+                    <p>
+                        AgroControl ha simplificado el manejo de mi chacra. Ahora
+                        organizo mis cultivos y controlo el riesgo de forma eficiente,
+                        ahorrando tiempo y aumentando la productividad.
                     </p>
                 </div>
-    
-                <div class="testimonials__cards">
-    
-                    <div class="testimonials__card">
-                        <div class="testimonials__card-header">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <h4>Luisa Gutiérrez</h4>
-                        </div>
-                        <div class="testimonials__card-body">
-                            <p>
-                                AgroControl ha simplificado el manejo de mi chacra. Ahora
-                                organizo mis cultivos y controlo el riesgo de forma eficiente,
-                                ahorrando tiempo y aumentando la productividad.
-                            </p>
-                        </div>
-                    </div>
-    
-                    <div class="testimonials__card">
-                        <div class="testimonials__card-header">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <h4>Lorena Herrera</h4>
-                        </div>
-                        <div class="testimonials__card-body">
-                            <p>
-                                La planificación de AgroControl es fácil y efectiva. He
-                                mejorado la calidad de mis cosechas y mantengo mi 
-                                inventario siempre al día.
-                            </p>
-                        </div>
-                    </div>
+            </div>
 
-                    <div class="testimonials__card">
-                        <div class="testimonials__card-header">
-                            <img src="https://images.unsplash.com/photo-1608193882486-3af78815f450?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <h4>Luis Gutiérrez</h4>
-                        </div>
-                        <div class="testimonials__card-body">
-                            <p>
-                                Tengo una visión clara de mi chacra. El riego automatizado y la toma de 
-                                decisiones informadas han mejorado mis rendimientos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonials__card">
-                        <div class="testimonials__card-header">
-                            <img src="https://images.unsplash.com/photo-1617330527074-fe659f90e7b5?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <h4>Carlos Tello</h4>
-                        </div>
-                        <div class="testimonials__card-body">
-                            <p>
-                                AgroControl ha hecho mi trabajo más eficiente. Es una herramienta indispensable 
-                                para gestionar recursos y enfrentar épocas de sequía.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonials__card">
-                        <div class="testimonials__card-header">
-                            <img src="https://images.unsplash.com/photo-1630694892664-99ec5225361a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <h4>Carlos Palma</h4>
-                        </div>
-                        <div class="testimonials__card-body">
-                            <p>
-                                AgroControl ha simplificado el manejo de mi chacra. Ahora
-                                organizo mis cultivos y controlo el riesgo de forma eficiente,
-                                ahorrando tiempo y aumentando la productividad.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonials__card">
-                        <div class="testimonials__card-header">
-                            <img src="https://images.unsplash.com/photo-1440589473619-3cde28941638?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            <h4>Maria De la Cruz</h4>
-                        </div>
-                        <div class="testimonials__card-body">
-                            <p>
-                                AgroControl ha simplificado el manejo de mi chacra. Ahora
-                                organizo mis cultivos y controlo el riesgo de forma eficiente,
-                                ahorrando tiempo y aumentando la productividad.
-                            </p>
-                        </div>
-                    </div>
-                    
+            <div class="testimonials__card">
+                <div class="testimonials__card-header">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h4>Lorena Herrera</h4>
                 </div>
-    
+                <div class="testimonials__card-body">
+                    <p>
+                        La planificación de AgroControl es fácil y efectiva. He
+                        mejorado la calidad de mis cosechas y mantengo mi
+                        inventario siempre al día.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonials__card">
+                <div class="testimonials__card-header">
+                    <img src="https://images.unsplash.com/photo-1608193882486-3af78815f450?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h4>Luis Gutiérrez</h4>
+                </div>
+                <div class="testimonials__card-body">
+                    <p>
+                        Tengo una visión clara de mi chacra. El riego automatizado y la toma de
+                        decisiones informadas han mejorado mis rendimientos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonials__card">
+                <div class="testimonials__card-header">
+                    <img src="https://images.unsplash.com/photo-1617330527074-fe659f90e7b5?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h4>Carlos Tello</h4>
+                </div>
+                <div class="testimonials__card-body">
+                    <p>
+                        AgroControl ha hecho mi trabajo más eficiente. Es una herramienta indispensable
+                        para gestionar recursos y enfrentar épocas de sequía.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonials__card">
+                <div class="testimonials__card-header">
+                    <img src="https://images.unsplash.com/photo-1630694892664-99ec5225361a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h4>Carlos Palma</h4>
+                </div>
+                <div class="testimonials__card-body">
+                    <p>
+                        AgroControl ha simplificado el manejo de mi chacra. Ahora
+                        organizo mis cultivos y controlo el riesgo de forma eficiente,
+                        ahorrando tiempo y aumentando la productividad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="testimonials__card">
+                <div class="testimonials__card-header">
+                    <img src="https://images.unsplash.com/photo-1440589473619-3cde28941638?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h4>Maria De la Cruz</h4>
+                </div>
+                <div class="testimonials__card-body">
+                    <p>
+                        AgroControl ha simplificado el manejo de mi chacra. Ahora
+                        organizo mis cultivos y controlo el riesgo de forma eficiente,
+                        ahorrando tiempo y aumentando la productividad.
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </section>
+
     <section id="contact">
-      <div id="left-section">
-        <h1>
-          Fill out the form <span id="txt-span">for a free consultation</span>
-        </h1>
-        <p>
-          Leave your details and we will contact you to offer you personalized
-          advice. Discover how our solutions can help you improve your field
-          management.
-        </p>
-      </div>
-      <div id="right-section">
-        <div id="form-contc">
-          <form action="#">
-            <div class="form-row">
-              <input
-                type="text"
-                id="full-name"
-                name="full-name"
-                placeholder="Full Name"
-              />
-              <input type="text" id="email" name="email" placeholder="Email" />
+        <div id="left-section">
+            <h1>
+                Fill out the form <span id="txt-span">for a free consultation</span>
+            </h1>
+            <p>
+                Leave your details and we will contact you to offer you personalized
+                advice. Discover how our solutions can help you improve your field
+                management.
+            </p>
+        </div>
+        <div id="right-section">
+            <div id="form-contc">
+                <form action="#">
+                    <div class="form-row">
+                        <input
+                                type="text"
+                                id="full-name"
+                                name="full-name"
+                                placeholder="Full Name"
+                        />
+                        <input type="text" id="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="form-row">
+                        <input
+                                type="text"
+                                id="telephone"
+                                name="telephone"
+                                placeholder="Telephone"
+                        />
+                        <input
+                                type="text"
+                                name="service"
+                                id="service"
+                                placeholder="Service"
+                        />
+                    </div>
+                    <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Message"
+                    ></textarea>
+                    <button type="submit" id="btt-contact">Get Started</button>
+                </form>
             </div>
-            <div class="form-row">
-              <input
-                type="text"
-                id="telephone"
-                name="telephone"
-                placeholder="Telephone"
-              />
-              <input
-                type="text"
-                name="service"
-                id="service"
-                placeholder="Service"
-              />
-            </div>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Message"
-            ></textarea>
-            <button type="submit" id="btt-contact">Get Started</button>
-          </form>
-          <footer>
+        </div>
+    </section>
+
+    <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="assets\logo.png" alt="AgroControl" width="150rem">
+                <img src="assets/logo-agro-control.png" alt="AgroControl" width="150rem">
             </div>
             <div class="social-icons">
-                <a href="#"> <button><img src="assets\twitter-icon.png" alt="twitter"></button></a>
-                <a href="#"> <button><img src="assets\instagram-icon.png" alt="instagram"></button></a>
-                <a href="#"> <button><img src="assets\facebook-icon.png" alt="facebook"></button></a>
-                <a href="#"> <button><img src="assets\youtube-icon.png" alt="Youtube"></button></a>
+                <a href="#"> <button><img src="assets/twitter-icon.png" alt="twitter"></button></a>
+                <a href="#"> <button><img src="assets/instagram-icon.png" alt="instagram"></button></a>
+                <a href="#"> <button><img src="assets/facebook-icon.png" alt="facebook"></button></a>
+                <a href="#"> <button><img src="assets/youtube-icon.png" alt="Youtube"></button></a>
             </div>
         </div>
         <div class="footer-links">
@@ -471,9 +475,9 @@
         <div class="footer-contact">
             <h3>Contáctanos</h3>
             <ul>
-                <li><img src="assets\email-icon.png" alt="Email" width="10px"> hello@website.com</li>
-                <li><img src="assets\location-icon.png" alt="Location" width="10px"> Riverside Building, County Hall, London SE1 7PB, United Kingdom</li>
-                <li><img src="assets\phone-icon.png" alt="Phone" width="10px"> 451-484-5939</li>
+                <li><img src="assets/email-icon.png" alt="Email" width="10px"> hello@website.com</li>
+                <li><img src="assets/location-icon.png" alt="Location" width="10px"> Riverside Building, County Hall, London SE1 7PB, United Kingdom</li>
+                <li><img src="assets/phone-icon.png" alt="Phone" width="10px"> 451-484-5939</li>
             </ul>
         </div>
 
@@ -487,6 +491,6 @@
 
 
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
