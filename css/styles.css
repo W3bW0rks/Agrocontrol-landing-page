@@ -9,6 +9,11 @@
     --fontcolor: #525252;
 }
 
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -54,14 +59,13 @@ h3 {
 
 p {
     font-size: 1rem;
+    text-align: justify;
     color: var(--fontcolor);
 }
 
 .container {
-    width: 90%;
-    max-width: 75rem;
+    width: min(90%, 75rem);
     margin: 0 auto;
-    padding: 0 1rem;
 }
 
 .button {
@@ -267,6 +271,106 @@ nav ul li a:hover {
     .buttons button {
         width: 7rem;
         height: 2rem;
+    }
+}
+  
+.users-features {
+    font-family: var(--font-primary), serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    max-height: 720px;
+}
+
+.users-features__content {
+    flex-direction: column;
+}
+
+.users-features__title {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.users-features__span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.users-features__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .users-features__list {
+        gap: 3rem;
+    }
+}
+
+.users-features__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .users-features__item {
+        gap: 1rem;
+    }
+}
+
+.users-features__icon img {
+    max-width: none;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+.users-features__text-title{
+    font-size: 1.75rem;
+    color: var(--secondary);
+}
+
+@media (min-width: 768px) {
+    .users-features__text-title {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.users-features__text-sentence {
+    color: var(--fontcolor);
+}
+
+.users-features__aside {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .users-features__aside {
+        display: block;
+        height: auto;
+    }
+    .users-features__aside-img {
+        max-width: none;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .users-features__aside-img {
+        object-fit: contain; /* Ajusta la imagen para cubrir el contenedor sin distorsionar la imagen */
+        border-radius: 0.5rem;
     }
 }
 
