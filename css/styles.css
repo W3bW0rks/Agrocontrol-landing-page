@@ -93,6 +93,7 @@ nav {
     justify-content: space-around;
     font-family: var(--font-primary), serif;
     z-index: 1000;
+    padding: 0.5rem;
 }
 
 nav img {
@@ -102,6 +103,7 @@ nav img {
 nav ul {
     display: flex;
     justify-content: space-between;
+    gap: 0.2rem;
     width: 60%;
     padding: 0 1.25rem;
 }
@@ -117,6 +119,7 @@ nav ul li a:hover {
 
 .buttons {
     display: flex;
+    height: fit-content;
     width: 35%;
     justify-content: space-around;
 }
@@ -131,8 +134,11 @@ nav ul li a:hover {
 }
 
 .buttons #prueba-gratis {
+    font-size: 0.8rem;
+    padding: 0.5rem;
     background-color: #2FB95D;
     color: white;
+    justify-self: center;
 }
 
 #nav-links {
@@ -173,7 +179,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     nav img {
         width: 10rem;
     }
@@ -182,7 +188,7 @@ nav ul li a:hover {
     }
     .buttons button {
         width: 7rem;
-        height: 2rem;
+        height: 1.5rem;
     }
 }
 
@@ -242,6 +248,7 @@ nav ul li a:hover {
     background-image: url("../assets/hero-image.png");
     text-align: center;
     padding: 4rem 1rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -292,10 +299,16 @@ nav ul li a:hover {
     gap: 2rem;
 }
 
-
 .hero-text h1 {
     font-family: var(--font-primary), sans-serif;
     color: var(--primary);
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-text h1 {
+        font-size: 4rem;
+    }
 }
 
 .hero-text p {
@@ -822,6 +835,38 @@ nav ul li a:hover {
         white-space: nowrap;
     }
 }
+
+.video-presentation {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.video-presentation__title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.video-presentation__container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-presentation__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /** Contact Section */
 #contact {
